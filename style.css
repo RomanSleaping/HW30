@@ -1,0 +1,35 @@
+.foursquare {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 170px;
+  left: 300px;
+  animation-name: square;
+  animation-duration: 5000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes square {
+  0% {
+    transform: translate(0px, 0px);
+    background-color: black;
+  }
+
+  25% {
+    transform: translateX(300px);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(300px, 300px);
+    background-color: navy;
+  }
+  75% {
+    transform: translate(0px, 300px);
+    background-color: cyan;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    background-color: white;
+  }
+}
